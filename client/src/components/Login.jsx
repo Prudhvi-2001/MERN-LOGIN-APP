@@ -31,6 +31,7 @@ const onSubmit=async(values,onSubmitProps)=>{
     body:JSON.stringify(values)
 
   })
+  console.log(onSubmitProps)
   console.log(result.json())
   console.log(result.type)
   if(result.status === 200) {
@@ -81,7 +82,7 @@ onSubmit={onSubmit}
  </div>
 
 
- <input type='submit'className='submit' value='Submit'  />
+ <input type='submit'className='submit' value={formik.isSubmitting ? "Please Wait":"Submit"}  />
  <div class="subtitle">Don't have an account?<Link to='/' className='link'>Sign Up</Link></div>
 </div>
  </Form>
