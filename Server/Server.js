@@ -8,6 +8,7 @@ const jwt=require('jsonwebtoken')
 const ENV=require('./config.js')
 const app=express() 
 const port=8080
+//Example to pull the repository from remote to local
 //middlewares
 app.use(express.json())
 app.use(bodyparser.urlencoded({extended:false}))
