@@ -33,7 +33,6 @@ const onSubmit=async(values,onSubmitProps)=>{
   })
   console.log(onSubmitProps)
   console.log(result.json())
-  console.log(result.type)
   if(result.status === 200) {
     toast.success('Login Sucessful')
     validations.authenticated=true

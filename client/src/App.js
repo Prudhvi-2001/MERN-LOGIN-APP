@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Profile from './components/Profile';
 import { Provider } from 'react-redux';
 import store from './store';
+import UseState from './components/UseState';
 function App() {
   const router=createBrowserRouter([
     {
@@ -18,6 +19,9 @@ function App() {
     },{
       path:'/profile',
       element:<Profile/>
+    },{
+      path:'/sample',
+      element:<UseState/>
     }
   ])
   return (
