@@ -37,6 +37,8 @@ mongoose.connect(
 app.get('/',(req,res)=>{
     res.send('HOME PAGE')
 })
+
+
 //To store the data in the database
 app.post('/signup',async(req,res)=>{
     const {fname,lname,email,username}=req.body
